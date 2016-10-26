@@ -64,6 +64,9 @@ var getChannel = function (env, id, callback) {
         whenLoaded: [ callback ],
         onError: [ ]
     };
+console.log("loading channel");
+const t1 = new Date().getTime();
+channel.whenLoaded.push(() => { const t2 = new Date().getTime(); console.log("took [" + (t2 - t1) + "] ms to load"); });
     var complete = function (err) {
         var whenLoaded = channel.whenLoaded;
         // no guarantee stream.on('error') will not cause this to be called multiple times
@@ -145,6 +148,8 @@ var getMessages = function (env, chanName, handler, cb) {
             cb(err);
             return;
         }
+console.log("sending messages");
+const t1 = new Date().getTime();
         try {
             chan.messages
                 .forEach(function (message) {
@@ -156,6 +161,7 @@ var getMessages = function (env, chanName, handler, cb) {
             cb(err2);
             return;
         }
+const t2 = new Date().getTime(); console.log("took [" + (t2 - t1) + "] ms to send messages");
         chan.atime = +new Date();
         cb();
     });
