@@ -468,7 +468,6 @@ define(function () {
     out.updated_0_fm_info_trash = out.fm_info_trash;
 
     out.fs_migration = "Tu CryptDrive fue actualizado a una nueva versión.<br><strong>Por favor, recarga la página.</strong>";
-    out.login_notRegistered = "¿No estás registrado?";
     out.upload_mustLogin = "Tienes que estar conectado para subir archivos";
 
     out.uploadButton = "Subir";
@@ -578,6 +577,54 @@ define(function () {
     out.main_whiteboardPad = "Pizarra";
     out.main_localPads = "Pad Locales";
     out.main_yourCryptDrive =  "Tu CryptDrive";
+
+    //
+    out.useTemplate = "¿Empezar con una plantilla?";
+    out.useTemplateOK = "Seleccionar plantilla (Enter)";
+    out.useTemplateCancel = "Empezar de cero (Esc)";
+    out.tags_title = "Etiquetas";
+    out.tags_add = "Actualizar etiquetas";
+    out.tags_duplicate = "Etiqueta duplicada: {0}";
+    out.fileShare = "Copiar enlace";
+    out.getEmbedCode = "Obtener código de incrustación";
+    out.viewEmbedTitle = "Incrustar este pad en una página exterior";
+    out.viewEmbedTag = "Para incrustar este pad, agrega este iframe en tu página donde quieras. Puedes stylizar la con HTML y CSS.";
+    out.fileEmbedTitle = "Incrustar este archivo en una página exterior";
+    out.fileEmbedScript = "Para incrustar este archivo, incluya el script una vez en su página para cargar Media Tag:";
+    out.fileEmbedTag = "Luego ponlo en cualquier lugar de tu página para incrustarlo";
+    out.pad_mediatagTitle = "Ajustes Media-Tag";
+    out.pad_mediatagWidth = "Talla horizontal (px):";
+    out.pad_mediatagHeight = "Talla vertical (px):";
+    out.contacts_fetchHistory = "Obtener historial más antiguo";
+    out.fm_recentPadsName = "Pads recientes";
+    out.fm_info_recent = "Lista los pads modificados o abiertos recientemente.";
+    out.fm_renamedPad = "Has puesto un nombre personal a este pad. El título compartido es:<br><b>{0}</b>";
+    out.fm_prop_tagsList = "Etiquetas";
+    out.register_passwordTooShort = "Contraseñas tienen que ser al menos {0} carácteres.";
+    out.register_testimonial = ""; // " \"Tools like Etherpad and Google Docs [...] all share a weakness, which is that whomever owns the document server can see everything you're typing. Cryptpad is a free/open project that uses some of the ideas behind blockchain to implement a \"zero-knowledge\" version of a collaborative document editor, ensuring that only the people working on a document can see it.\"  "
+    out.register_testimonial_name = "Cory Doctorow";
+    out.main_about_p22 = "Tweeteanos";
+    out.main_about_p23 = "Abre un issue en GitHub";
+    out.main_about_p24 = "Ven a decir hola (Matrix)";
+    out.main_about_p25 = "Enviar un e-mail";
+    out.main_about_p26 = ""; // "If you have any questions or comments, feel free to reach out!"
+    out.main_footerText = ""; // "With CryptPad, you can make quick collaborative documents for taking notes and writing down ideas together."
+    out.whatis_title = ""; // "What is CryptPad"
+    out.whatis_collaboration = ""; // "Fast, Easy Collaboration"
+    out.whatis_collaboration_p1 = ""; // "With CryptPad, you can make quick collaborative documents for taking notes and writing down ideas together. When you sign up and log in, you get file upload capability and a CryptDrive where you can organize all of your pads. As a registered user you get 50MB of space for free."
+    out.whatis_collaboration_p2 = ""; // "You can share access to a CryptPad document simply by sharing the link. You can also share a link which provides <em>read only</em> access to a pad, allowing you to publicise your collaborative work while still being able to edit it."
+    out.whatis_collaboration_p3 = ""; // "You can make simple rich text documents with <a href=\"http://ckeditor.com/\">CKEditor</a> as well as Markdown documents which are rendered in realtime while you type. You can also use the poll app for scheduling events with multiple participants."
+    out.whatis_zeroknowledge = ""; // "Zero Knowledge"
+    out.whatis_zeroknowledge_p1 = ""; // "We don't want to know what you're typing and with modern cryptography, you can be sure that we can't know. CryptPad uses <strong>100% client side encryption</strong> to protect the content that you type from us, the people who host the server."
+    out.whatis_zeroknowledge_p2 = ""; // "When you sign up and log in, your username and password are computed into a secret key using <a href=\"https://en.wikipedia.org/wiki/Scrypt\">scrypt key derivation function</a>. Neither this key, nor the username and password are ever sent to the server. Instead they are used on the client side to decrypt the content of your CryptDrive, which contains the keys to all pads that you are able to access."
+    out.whatis_zeroknowledge_p3 = ""; // "When you share the link to a document, you're sharing the cryptographic key for accessing that document but since the key is in the <a href=\"https://en.wikipedia.org/wiki/Fragment_identifier\">fragment identifier</a>, it is never directly sent to the server. Check out our <a href=\"https://blog.cryptpad.fr/2017/07/07/cryptpad-analytics-what-we-cant-know-what-we-must-know-what-we-want-to-know/\">privacy blog post</a> to learn more about what types of metadata we do and do not have access to."
+    out.whatis_drive = ""; // "Organization with CryptDrive"
+    out.whatis_drive_p1 = ""; // "Whenever you access a pad in CryptPad, the pad is automatically added to your CryptDrive in the main folder. Later on, you can organize these pads into folders or you can put them in the trash bin. CryptDrive allows you to search through your pads and to organize them whenever you want, however you want."
+    out.whatis_drive_p2 = ""; // "With intuitive drag-and-drop, you can move pads around in your drive and the link to these pads will stay the same so your collaborators will never lose access."
+    out.whatis_drive_p3 = ""; // "You can also upload files in your CryptDrive and share them with colleagues. Uploaded files can be organized just like collaborative pads."
+    out.whatis_business = ""; // "CryptPad for Business"
+    out.whatis_business_p1 = ""; // "CryptPad's Zero Knowledge encryption is excellent for multiplying the effectiveness of existing security protocols by mirroring organizational access controls in cryptography. Because sensitive assets can only be decrypted using employee access credentials, CryptPad removes the hacker jackpot which exists in traditional IT servers. Read the <a href=\"https://blog.cryptpad.fr/images/CryptPad-Whitepaper-v1.0.pdf\">CryptPad Whitepaper</a> to learn more about how it can help your business."
+    out.whatis_business_p2 = ""; // "CryptPad is deployable on premises and the <a href=\"https://cryptpad.fr/about.html\">CryptPad developers</a> at XWiki SAS are able to offer commercial support, customization and development. Reach out to <a href=\"mailto:sales@cryptpad.fr\">sales@cryptpad.fr</a> for more information."
 
     return out;
 });
